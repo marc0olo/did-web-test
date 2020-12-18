@@ -1,0 +1,27 @@
+{
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      {
+        "@base": "did:web:marc0olo.github.io:did-web-test:organization-bob"
+      }
+    ],
+    "id": "did:web:marc0olo.github.io:did-web-test:organization-bob",
+    "publicKey": [
+        {
+          "id": "1",
+          "controller": "did:web:marc0olo.github.io:did-web-test:organization-bob",
+          "type": "Ed25519VerificationKey2018",
+          "publicKeyBase58": "HWj5foAbxaKzNVQ62RGRQN2qw9epdgTe1sQfhUvyHmEu"
+        }
+    ],
+    "service": [
+        {
+          "id": "did:web:marc0olo.github.io:did-web-test:organization-bob;did-communication",
+          "type": "did-communication",
+          "priority" : 0,
+          "recipientKeys" : [ "did:web:marc0olo.github.io:did-web-test:organization-bob#1" ],
+          "routingKeys" : [ ],
+          "serviceEndpoint" : "http://agent-acapy-bob:8000"
+        }
+    ]
+  }

@@ -1,0 +1,26 @@
+{
+    "@context": [
+      "https://www.w3.org/ns/did/v1",
+      {
+        "@base": "did:web:marc0olo.github.io:did-web-test:organization-alice"
+      }
+    ],
+    "id": "did:web:marc0olo.github.io:did-web-test:organization-alice",
+    "publicKey": [
+        {
+          "id": "1",
+          "controller": "did:web:marc0olo.github.io:did-web-test:organization-alice",
+          "type": "Ed25519VerificationKey2018",
+          "publicKeyBase58": "7VgXHqqJurmiDNw8hi6csXopjbkqW7znexRjsBwSsyXx"        }
+    ],
+    "service": [
+        {
+          "id": "did:web:marc0olo.github.io:did-web-test:organization-alice#did-communication",
+          "type": "did-communication",
+          "priority" : 0,
+          "recipientKeys" : ["7VgXHqqJurmiDNw8hi6csXopjbkqW7znexRjsBwSsyXx"],
+          "routingKeys" : [ ],
+          "serviceEndpoint" : "http://agent-acapy-alice:8000"
+        }
+    ]
+  }
